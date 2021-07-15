@@ -14,7 +14,9 @@ To start using it you need:
 3. wxWidgets (better to compile it from sources).
 
 copy wxbase316ud_gcc_custom.dll and wxmsw316ud_core_gcc_custom.dll from your wxWidgets "make-install" directory to the .\build\x64_debug\ directory
+
 copy wxbase316u_gcc_custom.dll and wxmsw316u_core_gcc_custom.dll from your "make-install" directory to the .\build\x64_release\ directory
+
 copy content of your wxWidgets "make-install" directory to .\deps\wxWidgets
 
 In the .vscode/settings.json:
