@@ -1,0 +1,9 @@
+C++ wxWidgets project template with MinGW-w64 compiler (downloaded from https://winlibs.com/)
+
+GCC 11.1.0 + LLVM/Clang/LLD/LLDB 12.0.0 + MinGW-w64 9.0.0 - release 2
+
+I tried to make it "portable" - wxWidgets dependencies are inside project folder (dep folder)
+
+There is unused variable in settings.json "wxWidgetsRoot". 
+
+I used this video tutorial - https://www.youtube.com/watch?v=tHMGA0jIl3Y

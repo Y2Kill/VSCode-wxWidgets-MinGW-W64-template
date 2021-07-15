@@ -1,0 +1,4 @@
+{
+    "compilerPath" : "c:\\compile_tools\\mingw64\\bin",
+    "wxWidgetsRoot" : "${workspaceFolder}\\deps\\wxWidgets"
+}

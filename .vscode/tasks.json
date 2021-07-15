@@ -1,0 +1,75 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build_debug_x64",
+            "command": "${config:compilerPath}\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\build\\x64_debug\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "${config:wxWidgetsRoot}\\include",
+                "-I",
+                "${config:wxWidgetsRoot}\\lib\\gcc_x64_dll\\mswud",
+                "-L",
+                "${config:wxWidgetsRoot}\\lib\\gcc_x64_dll",
+                "-l",
+                "wxmsw31ud_core",
+                "-l",
+                "wxbase31ud",
+                "-mwindows"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: MinGW-w64 9.0.0"
+        },
+        {
+			"type": "shell",
+			"label": "Build_release_x64",
+            "command": "${config:compilerPath}\\g++.exe",
+            "args": [
+                "-O2",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\build\\x64_release\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "${config:wxWidgetsRoot}\\include",
+                "-I",
+                "${config:wxWidgetsRoot}\\lib\\gcc_x64_dll\\mswu",
+                "-L",
+                "${config:wxWidgetsRoot}\\lib\\gcc_x64_dll",
+                "-l",
+                "wxmsw31u_core",
+                "-l",
+                "wxbase31u",
+                "-mwindows"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: MinGW-w64 9.0.0"
+        }
+	]
+}
