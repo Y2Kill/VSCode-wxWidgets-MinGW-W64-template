@@ -1,0 +1,1 @@
+put here the content of the folder, where your compilled wxWidgets is (must be 3 directories - bin, include and lib)
