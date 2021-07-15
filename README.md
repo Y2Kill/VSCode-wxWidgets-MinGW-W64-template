@@ -27,4 +27,4 @@ leave "wxWidgetsRoot" as is or change to your wxWidgets root directory (compiled
 
 That is all - just open template directory with VSCode.
 
-All configurations done with json files inside .vscode directory just wathc video above to understand configs.
+All configurations done with json files inside .vscode directory just watch video above to understand configs.
