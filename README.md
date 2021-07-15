@@ -13,6 +13,8 @@ To start using it you need:
 
 3. wxWidgets (better to compile it from sources).
 
+Folow the instructions below or download "release" of this template with precompiled wxWidgets 3.1.x [here](https://github.com/Y2Kill/VSCode-wxWidgets-MinGW-W64-template/releases/tag/v1.0)
+
 copy wxbase316ud_gcc_custom.dll and wxmsw316ud_core_gcc_custom.dll from your wxWidgets "make-install" directory to the .\build\x64_debug\ directory
 
 copy wxbase316u_gcc_custom.dll and wxmsw316u_core_gcc_custom.dll from your "make-install" directory to the .\build\x64_release\ directory
