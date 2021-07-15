@@ -9,7 +9,7 @@ To start using it you need:
 
 1. VSCode;
 
-2. MinGW-W64 compiler (I used [this one] (https://winlibs.com/) version: GCC 11.1.0 + LLVM/Clang/LLD/LLDB 12.0.0 + MinGW-w64 9.0.0 - release 2
+2. MinGW-W64 compiler. I used [this one] (https://winlibs.com/) version: GCC 11.1.0 + LLVM/Clang/LLD/LLDB 12.0.0 + MinGW-w64 9.0.0 - release 2
 
 3. wxWidgets (better to compile it from sources).
 
