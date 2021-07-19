@@ -22,7 +22,6 @@
                 "wxmsw31ud_core",
                 "-l",
                 "wxbase31ud",
-                "-mwindows"
             ],
 			"options": {
 				"cwd": "${workspaceFolder}"
@@ -70,6 +69,71 @@
 				"isDefault": true
 			},
 			"detail": "compiler: MinGW-w64 9.0.0"
+        },
+        {
+			"type": "shell",
+			"label": "Build_debug_x64_wxWidgetsMono",
+            "command": "${config:compilerPath}\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\build\\x64_debug_Mono\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "${config:wxWidgetsMonoRoot}\\include",
+                "-I",
+                "${config:wxWidgetsMonoRoot}\\lib\\gcc_x64_dll\\mswud",
+                "-L",
+                "${config:wxWidgetsMonoRoot}\\lib\\gcc_x64_dll",
+                "-l",
+                "wxmsw31ud"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: MinGW-w64 9.0.0. Monolitic build of wxWidgets dll"
+        },
+        {
+			"type": "shell",
+			"label": "Build_release_x64_wxWidgetsMono",
+            "command": "${config:compilerPath}\\g++.exe",
+            "args": [
+                "-O2",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\build\\x64_release_Mono\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "${config:wxWidgetsMonoRoot}\\include",
+                "-I",
+                "${config:wxWidgetsMonoRoot}\\lib\\gcc_x64_dll\\mswu",
+                "-L",
+                "${config:wxWidgetsMonoRoot}\\lib\\gcc_x64_dll",
+                "-l",
+                "wxmsw31u",
+                "-mwindows"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: MinGW-w64 9.0.0. Monolitic build of wxWidgets dll"
         }
 	]
 }
