@@ -7,7 +7,10 @@ This is simple project template for VSCode with MinGW-W64 compiler and wxWidgets
 
 This template was made with great help of video [this](https://www.youtube.com/watch?v=tHMGA0jIl3Y) tutorial.
 
-I added .tutorials folder with some examples from [zetcode.com](https://zetcode.com/gui/wxwidgets/). Almost all of them just copypaste. I made some slight changes to make some of them work. Some examples use depricated features of wxWidgets and don' work as expected - not the worst sandbox to start playing I think :). 
+I added .tutorials directory with some examples:
+1. [zetcode.com](https://zetcode.com/gui/wxwidgets/). Almost all of them just copypaste. I made some slight changes to make some of them work. Some examples use depricated features of wxWidgets and don' work as expected - not the worst sandbox to start playing I think :);
+2. Book [Cross-Platform GUI Programming with wxWidgets](https://www.wxwidgets.org/docs/book/) scroll down to find original download link;
+3. And, lot more examples [here](https://github.com/wxWidgets/wxWidgets/tree/WX_3_0_BRANCH/samples). I didn,t include them to the .tutorials directory cause they are part of wxWidgets sources.
 
 To start using it you need:
 
