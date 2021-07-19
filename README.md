@@ -1,9 +1,13 @@
 # VSCode-wxWidgets-MinGW-W64-template
-Basic app tempplate with VSCode, wxWidgets and MinGW-W64
+Basic application tempplate for VSCode. Used: wxWidgets and MinGW-W64
 
-This is simple project template for VSCode, MinGW-W64 compiler and wxWidgets C++ framework
+<u>Don't expect much of this template - I'm not "true" programmer.</u>
 
-It was made with video tutorial [here](https://www.youtube.com/watch?v=tHMGA0jIl3Y)
+This is simple project template for VSCode with MinGW-W64 compiler and wxWidgets C++ framework.
+
+This template was made with great help of video [this](https://www.youtube.com/watch?v=tHMGA0jIl3Y) tutorial.
+
+I added .tutorials folder with some examples from [zetcode.com](https://zetcode.com/gui/wxwidgets/). Almost all of them just copypaste. I made some slight changes to make some of them work. Some examples use depricated features of wxWidgets and don' work as expected - not the worst sandbox to start playing I think :). 
 
 To start using it you need:
 
@@ -11,22 +15,21 @@ To start using it you need:
 
 2. MinGW-W64 compiler. I used [this](https://winlibs.com) version: GCC 11.1.0 + LLVM/Clang/LLD/LLDB 12.0.0 + MinGW-w64 9.0.0 - release 2
 
-3. wxWidgets (better to compile it from sources).
+3. wxWidgets (better to buil it youself).
 
-Folow the instructions below or download "release" of this template with precompiled wxWidgets 3.1.x [here](https://github.com/Y2Kill/VSCode-wxWidgets-MinGW-W64-template/releases/tag/v1.0)
+You can download a kind of "release" of this template with precompiled wxWidgets 3.1.x [here](https://github.com/Y2Kill/VSCode-wxWidgets-MinGW-W64-template/releases/tag/v1.0)
 
-copy wxbase316ud_gcc_custom.dll and wxmsw316ud_core_gcc_custom.dll from your wxWidgets "make-install" directory to the .\build\x64_debug\ directory
+Or build and copy compilled wxWidgets DLLs into corresponding ./build/ directory.
 
-copy wxbase316u_gcc_custom.dll and wxmsw316u_core_gcc_custom.dll from your "make-install" directory to the .\build\x64_release\ directory
+The .vscode/settings.json file contains following settings:
 
-copy content of your wxWidgets "make-install" directory to .\deps\wxWidgets
+- "compilerPath" - path to your compiler bin directory;
 
-In the .vscode/settings.json:
+- "wxWidgetsRoot" - path to your wxWidgets root directory it points to "${workspaceFolder}\\deps\\wxWidgets" to make this template kind of "portable" change it if needed :);
+- "wxWidgetsMonoRoot" - the same as "wxWidgetsRoot" but all DLLs compiled into single file (use it if you want to link single library and forget about it :).
 
-change "compilerPath" to your compiler bin directory
+The .vscode/settings.json file contains settings for four build types x_64 Debug (monolitic and nonmonolitic) and x_64 Release (monolitic and nonmonolitic).
 
-leave "wxWidgetsRoot" as is or change to your wxWidgets root directory (compiled of cource :))
+That is all - just open template directory with VSCode and happy coding :).
 
-That is all - just open template directory with VSCode.
-
-All configurations done with json files inside .vscode directory just watch video above to understand configs.
+If you find bugs or want me to add something to this template - fell free to make bug report or pull request.
