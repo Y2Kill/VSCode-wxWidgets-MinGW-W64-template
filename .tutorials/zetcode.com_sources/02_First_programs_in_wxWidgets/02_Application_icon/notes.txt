@@ -1,0 +1,4 @@
+It compiles
+It runs
+But NO icon is on the top left corner
+intellisens shows errors in icon.cpp
